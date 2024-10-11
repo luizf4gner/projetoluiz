@@ -30,12 +30,13 @@
         {
             buttonAdicionar = new Button();
             buttonRemover = new Button();
-            listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttonAdicionar
             // 
-            buttonAdicionar.Location = new Point(249, 55);
+            buttonAdicionar.Location = new Point(12, 30);
             buttonAdicionar.Name = "buttonAdicionar";
             buttonAdicionar.Size = new Size(132, 23);
             buttonAdicionar.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // buttonRemover
             // 
-            buttonRemover.Location = new Point(387, 55);
+            buttonRemover.Location = new Point(408, 30);
             buttonRemover.Name = "buttonRemover";
             buttonRemover.Size = new Size(136, 23);
             buttonRemover.TabIndex = 1;
@@ -53,25 +54,25 @@
             buttonRemover.UseVisualStyleBackColor = true;
             buttonRemover.Click += buttonRemover_Click;
             // 
-            // listBox1
+            // dataGridView1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(249, 84);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(274, 349);
-            listBox1.TabIndex = 2;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 59);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(532, 379);
+            dataGridView1.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
+            ClientSize = new Size(554, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(buttonRemover);
             Controls.Add(buttonAdicionar);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -79,6 +80,6 @@
 
         private Button buttonAdicionar;
         private Button buttonRemover;
-        private ListBox listBox1;
+        private DataGridView dataGridView1;
     }
 }

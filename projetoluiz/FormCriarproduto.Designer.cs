@@ -61,6 +61,7 @@
             InputPrecoCompra.DecimalPlaces = 2;
             InputPrecoCompra.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
             InputPrecoCompra.Location = new Point(132, 64);
+            InputPrecoCompra.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             InputPrecoCompra.Name = "InputPrecoCompra";
             InputPrecoCompra.Size = new Size(120, 23);
             InputPrecoCompra.TabIndex = 2;
@@ -71,6 +72,7 @@
             inputPrecoVenda.DecimalPlaces = 2;
             inputPrecoVenda.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
             inputPrecoVenda.Location = new Point(132, 93);
+            inputPrecoVenda.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             inputPrecoVenda.Name = "inputPrecoVenda";
             inputPrecoVenda.Size = new Size(120, 23);
             inputPrecoVenda.TabIndex = 3;
@@ -128,9 +130,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(16, 101);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(88, 15);
             label4.TabIndex = 9;
-            label4.Text = "label4";
+            label4.Text = "Preco de venda";
             // 
             // FormCriarproduto
             // 
